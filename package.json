@@ -1,0 +1,36 @@
+{
+  "name": "rehp_test",
+  "version": "0.7.0",
+  "description": "Pack JS code into a single bundle fast & easy.",
+  "main": "index.js",
+  "esy": {
+    "build": [ "dune build" ],
+    "install": [ "esy-installer rehp_test.install" ],
+    "buildsInSource": "_build"
+  },
+  "directories": { "example": "example", "test": "test" },
+  "resolutions": {
+    "@opam/js_of_ocaml": "jordwalke/rehp:js_of_ocaml.opam#c9b8028ae5781e7a7e5ea0a630f744865f1b4f63",
+    "@opam/js_of_ocaml-compiler": "jordwalke/rehp:js_of_ocaml-compiler.opam#c9b8028ae5781e7a7e5ea0a630f744865f1b4f63",
+    "@esy-ocaml/reason": "github:facebook/reason#335c3fb2470964c2b4a7d571a8fbd9acdc3c2323",
+    "@esy-ocaml/esy-installer": "0.0.1"
+  },
+  "dependencies": {
+    "@opam/camlp4": "*",
+    "@opam/lwt": "*",
+    "@esy-ocaml/substs": "^0.0.1",
+    "@esy-ocaml/reason": "^3.3.0",
+    "@opam/jbuilder": " >= 1.0.0-beta17",
+    "@opam/deriving": "*",
+    "@opam/ocaml-migrate-parsetree": "*",
+    "@opam/ppx_tools_versioned": "*",
+    "@opam/uchar": "*",
+    "@opam/js_of_ocaml-lwt": "3.1.0",
+    "@opam/js_of_ocaml": "*",
+    "@opam/dune": "*",
+    "@opam/merlin": "*",
+    "@opam/utop": "^2.0.2",
+    "ocaml": "~4.6.0",
+    "refmterr": "*"
+  }
+}

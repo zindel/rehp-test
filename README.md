@@ -4,6 +4,7 @@ $ esy b
 $ esy ./run.sh
 $ open index.html
 ```
+Open console and see the "4" printed.
 
 Few notes:
 1. Had to copy & patch the `runtime.js` from the jsoo-compiler. Specifically in
